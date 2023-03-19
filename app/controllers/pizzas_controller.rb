@@ -1,7 +1,7 @@
 class PizzasController < ApplicationController
-  def restaurants
-  end
-
-  def restaurant_pizzas
+  def index
+    render json: Pizza.all, status: :ok
   end
 end
+
+  
